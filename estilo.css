@@ -1,0 +1,128 @@
+body{
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+}
+
+.logo-benjas{
+    width: 100px;       
+    height: 100px;     
+    object-fit: cover;  
+    border-radius: 50%; 
+    margin: 10px auto;  
+    display: block;  
+}
+
+.text-header h1{
+    margin: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}   
+
+.conteiner{
+    max-width: 900px;
+    margin: auto;
+    background-color: #f2f2f2;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 20px 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cardapio {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: calc(50% - 0.5rem); 
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    gap: 1rem;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card h3 {
+    margin: 0 0 0.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.3;
+}
+
+.card .preco {
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: #000;
+    margin-top: 0.5rem;
+}
+
+/* Responsividade utilizando css base */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card a {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .card img {
+        margin-bottom: 0.5rem;
+    }
+
+    .card-content {
+        align-items: center;
+    }
+}
